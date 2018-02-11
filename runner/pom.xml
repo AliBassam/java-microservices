@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.alibassam</groupId>
+		<artifactId>microservices</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>runner</artifactId>
+
+	<dependencies>
+		<!-- Embedded Payara Micro -->
+		<dependency>
+			<groupId>fish.payara.extras</groupId>
+			<artifactId>payara-micro</artifactId>
+			<version>5.Beta2</version>
+		</dependency>
+	</dependencies>
+	<name>Runner project containing embedded application servers</name>
+	<description>This project contains multiple embedded application servers and simple classes in order to run these servers and deploy the dedicated microservices.
+
+Spring Boot microservices are not started from this project, because Spring Boot already has tomcat embedded.</description>
+</project>
